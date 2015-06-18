@@ -1,0 +1,32 @@
+UI:
+
+<UI>:
+
+    orientation:"vertical"
+    xv: xvalue
+    yv: yvalueinput
+    px: xstepinput
+    py: ystepinput
+    GridLayout:
+        orientation: "vertical"
+        cols: 2
+        Label:
+            text: "X grid"
+        TextInput:
+            id: xvalue
+        Label:
+            text: "Y grid"
+        TextInput:
+            id: yvalueinput
+        Label:
+            text: "X step"
+        TextInput:
+            id: xstepinput
+        Label:
+            text: "Y step"
+        TextInput:
+            id: ystepinput
+    Button:
+        text: "Generate G code"
+        size_hint_y: .25
+        on_press:root.gridgenerator()
